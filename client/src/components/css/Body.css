@@ -138,10 +138,10 @@
   background-image: -webkit-linear-gradient(top right, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
   background-image: -o-linear-gradient(top right, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
   background-image: linear-gradient(to bottom left, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
-  animation: color-fadein 2s;
+  animation: color-fadein 1s;
 }
 
 @keyframes color-fadein {
   from { opacity: 0; }
-  to { opacity: 100%; }
+  to { opacity: 1; }
 }
