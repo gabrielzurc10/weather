@@ -4,8 +4,7 @@
   color: #001057;
   font-size: 3.5rem;
   font-family: 'Open Sans Condensed', sans-serif;
-  margin-top: 2rem;
-  height: 335px;
+  height: 345px;
 }
 
 .city,.temperature,.feelslike,.desc,.icon-container {
@@ -55,7 +54,6 @@
 @media only screen and (max-width: 600px) {
   .header-container {
     font-size: 3rem;
-    margin-top: 1rem;
   }
 
   .icon {
@@ -68,8 +66,17 @@
   }
 }
 
-@media only screen and (min-height: 1000px) {
+@media only screen and (max-height: 600px) {
   .header-container {
-    margin-top: 10rem;
+    font-size: 2rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .desc {
+    font-size: 1rem;
   }
 }

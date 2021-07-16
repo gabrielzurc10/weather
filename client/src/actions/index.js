@@ -1,4 +1,5 @@
 import axios from 'axios';
+import timeConvert from '../middlewares/timeConvert';
 import { FETCH_CITY, FETCH_TEMP, FETCH_FEELS, FETCH_ICON, FETCH_DESCRIPTION, FETCH_MAX, FETCH_MIN, FETCH_HUMID, FETCH_RISE, FETCH_SET } from './types';
 
 export const fetchWeather = () => async dispatch => {
@@ -20,8 +21,8 @@ export const fetchDetails = () => async dispatch => {
   const res = await axios.get('/api');
 
   try {
-    var sunrise = new Date(res.data.sys.sunrise * 1000).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true});
-    var sunset = new Date(res.data.sys.sunset * 1000).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true});
+    var sunrise = timeConvert("rise", res.data.sys.sunrise, res.data.timezone);
+    var sunset = timeConvert("set", res.data.sys.sunset, res.data.timezone);
 
     dispatch({ type: FETCH_MAX, payload: Math.trunc(res.data.main.temp_max)+"°" });
     dispatch({ type: FETCH_MIN, payload: Math.trunc(res.data.main.temp_min)+"°" });

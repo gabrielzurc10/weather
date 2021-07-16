@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from './actions';
 
-import Body from './components/body/Body';
-import './components/body/css/App.css';
+import Body from './components/Body';
+import renderBackground from './middlewares/renderBackground';
 
 class App extends Component {
 

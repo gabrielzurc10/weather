@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import renderIcon from "./renderIcon";
+import renderIcon from "../middlewares/renderIcon";
 
 import './css/Header.css'
 
