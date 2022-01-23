@@ -6,7 +6,7 @@ const timeConvert = (sun, unix, offset) => {
   var timezone = new Date(offset*1000);
   var unixhours = date.getHours();
   var mins = date.getMinutes();
-  var offsethours = timezone.getHours()-1;
+  var offsethours = timezone.getHours();
 
   if (unixhours > 12) {
       unixhours -= 12;

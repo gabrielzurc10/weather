@@ -11,8 +11,10 @@ class Body extends Component {
   render () {
     return (
       <div className={"body-container "+renderBackground(this.props.icon)}>
+      <div className="body-card">
         <Header />
         <Details />
+        </div>
         <Search />
       </div>
     );
