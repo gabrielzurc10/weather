@@ -5,10 +5,9 @@
 }
 
 input {
+  background-color: rgb(255, 255, 255);
   color: rgb(42, 42, 42);
   border-radius: 1rem;
-  border: 0.2rem solid rgb(42, 42, 42);
-  outline: none;
   width: 21rem;
   height: 2rem;
   font-family: 'Roboto', sans-serif;
@@ -17,6 +16,8 @@ input {
   font-weight: 700;
   padding: 0.5rem 2rem;
   transition: .2s ease;
+  border-style: none;
+  outline: none;
 }
 
 input:hover {
@@ -26,7 +27,6 @@ input:hover {
 @media only screen and (max-width: 600px) {
 
   input {
-    border: 0.15rem solid rgb(42, 42, 42);
     font-size: 0.8rem;
     padding: 1rem 2rem;
     width: 14rem;
