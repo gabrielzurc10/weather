@@ -8,7 +8,7 @@ const Search = () => {
       <form action='/api/post' method='post'>
         <SearchBox />
         <div className="button">
-        <button type="submit"><i className="logo fas fa-search"></i></button>
+          <button type="submit"><i className="logo fas fa-search"></i></button>
         </div>
       </form>
     </div>

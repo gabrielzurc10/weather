@@ -17,25 +17,50 @@ class Details extends Component {
     return (
       <div className="details-container">
         <div className={this.renderDetails(this.props.icon)}>
-          <div className="info">
+
+          <div className="info tooltip">
             {this.props.max}
-            <img className="temp" src="/images/max.png"/>
+              <img className="temp" src="/images/max.png"/>
+              <div class="bottom">
+                <h3>Highest</h3>
+                <i></i>
+              </div>
           </div>
-          <div className="info">
+
+          <div className="info tooltip">
             {this.props.min}
             <img className="temp" src="/images/min.png"/>
+            <div class="bottom">
+              <h3>Lowest</h3>
+              <i></i>
+            </div>
           </div>
-          <div className="info">
+
+          <div className="info tooltip">
             {this.props.humid}
             <img className="humid"src="/images/humid.png"/>
+            <div class="bottom">
+              <h3>Humidity</h3>
+              <i></i>
+            </div>
           </div>
-          <div className="info">
+
+          <div className="info tooltip">
             {this.props.rise}
             <img className="sun" src="/images/sunrise.png"/>
+            <div class="bottom">
+              <h3>Sunrise</h3>
+              <i></i>
+            </div>  
           </div>
-          <div className="info">
+
+          <div className="info tooltip">
             {this.props.set}
             <img className="sun" src="/images/sunset.png"/>
+            <div class="bottom">
+              <h3>Sunset</h3>
+              <i></i>
+            </div>  
           </div>
         </div>
       </div>
