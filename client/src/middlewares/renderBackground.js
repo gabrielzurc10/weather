@@ -1,7 +1,7 @@
 const renderBackground = result => {
   switch (result) {
     case "00":
-      return "crying";
+      return "notfound";
     case "01d":
       return "sunny";
     case "01n":
