@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './css/Details.css';
+import './css/Loader.css';
 
 class Details extends Component {
 
@@ -17,10 +18,10 @@ class Details extends Component {
     return (
       <div className="details-container">
         <div className={this.renderDetails(this.props.icon)}>
-
+        
           <div className="info tooltip">
             {this.props.max}
-              <img className="temp" src="/images/max.png" alt="Highest"/>
+              {this.props.max ? <img className="temp" src="/images/max.png" alt="Highest"/> : <div className="loading-subicon"></div>}
               <div class="bottom">
                 <h3>Highest</h3>
                 <i></i>
@@ -29,7 +30,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.min}
-            <img className="temp" src="/images/min.png" alt="Lowest"/>
+            {this.props.min ? <img className="temp" src="/images/min.png" alt="Lowest"/> : <div className="loading-subicon"></div>}
             <div class="bottom">
               <h3>Lowest</h3>
               <i></i>
@@ -38,7 +39,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.humid}
-            <img className="humid"src="/images/humid.png" alt="Humidity"/>
+            {this.props.humid ? <img className="humid"src="/images/humid.png" alt="Humidity"/> : <div className="loading-subicon"></div>}
             <div class="bottom">
               <h3>Humidity</h3>
               <i></i>
@@ -47,7 +48,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.rise}
-            <img className="sun" src="/images/sunrise.png" alt="Sunrise"/>
+            {this.props.rise ? <img className="sun" src="/images/sunrise.png" alt="Sunrise"/> : <div className="loading-subicon"></div>}
             <div class="bottom">
               <h3>Sunrise</h3>
               <i></i>
@@ -56,7 +57,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.set}
-            <img className="sun" src="/images/sunset.png" alt="Sunset"/>
+            {this.props.set ? <img className="sun" src="/images/sunset.png" alt="Sunset"/> : <div className="loading-subicon"></div>}
             <div class="bottom">
               <h3>Sunset</h3>
               <i></i>

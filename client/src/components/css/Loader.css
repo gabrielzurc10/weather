@@ -1,0 +1,96 @@
+.loading-title {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 1rem;
+}
+
+.loading-temp {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 1rem;
+}
+
+.loading-feels {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 10rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 1rem;
+}
+
+.loading-icon {
+    margin-top: 1rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 100%;
+}
+
+.loading-desc {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 10rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 1rem;
+}
+
+.loading-subicon {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .loading-title {
+        margin-top: 1rem;
+        height: 1.5rem;
+        width: 7rem;
+        background-color: rgb(223, 223, 223);
+        border-radius: 1rem;
+    }
+    
+    .loading-temp {
+        margin-top: 1rem;
+        height: 1rem;
+        width: 2.5rem;
+        background-color: rgb(223, 223, 223);
+        border-radius: 1rem;
+    }
+    
+    .loading-feels {
+        margin-top: 1rem;
+        height: 1rem;
+        width: 5rem;
+        background-color: rgb(223, 223, 223);
+        border-radius: 1rem;
+    }
+    
+    .loading-icon {
+        margin-top: 1rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: rgb(223, 223, 223);
+        border-radius: 100%;
+    }
+    
+    .loading-desc {
+        margin-top: 1rem;
+        height: 1.5rem;
+        width: 5rem;
+        background-color: rgb(223, 223, 223);
+        border-radius: 1rem;
+    }
+    
+    .loading-subicon {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: rgb(223, 223, 223);
+        border-radius: 100%;
+    }
+  }

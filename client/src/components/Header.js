@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import renderIcon from "../middlewares/renderIcon";
 
 import './css/Header.css'
+import './css/Loader.css'
 
 class Header extends Component {
 
@@ -10,19 +11,19 @@ class Header extends Component {
     return(
       <div className="header-container">
         <div className="city">
-          {this.props.city}
+          {this.props.desc ? this.props.city : <div className="loading-title"/>}
         </div>
         <div className="temperature">
-          {this.props.temp}
+          {this.props.desc ? this.props.temp : <div className="loading-temp"/>}
         </div>
         <div className="feelslike">
-          {this.props.feels}
+          {this.props.desc ? this.props.feels : <div className="loading-feels"/>}
         </div>
         <div className="icon-container">
-          {<img className="icon" src={renderIcon(this.props.icon)} alt=""/>}
+          {this.props.icon ? <img className="icon" src={renderIcon(this.props.icon)} alt=""/> : <div className='loading-icon'></div>}
         </div>
         <div className="desc">
-          {this.props.desc}
+          {this.props.desc ? this.props.desc : <div className="loading-desc"/>}
         </div>
       </div>
     );

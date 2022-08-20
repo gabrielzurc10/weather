@@ -18,12 +18,8 @@
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.129);
   background-color: rgba(255, 255, 255);
   width: 25rem;
-  height: 28rem;
+  min-height: 28rem;
   transition: 0.2s ease;
-}
-
-.body-card:hover {
-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .crying {
@@ -161,10 +157,6 @@ box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 @media only screen and (max-width: 600px) {
   .body-card {
     width: 18rem;
-    height: 20rem;
-  }
-
-  .body-card:hover {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    min-height: 20rem;
   }
 }

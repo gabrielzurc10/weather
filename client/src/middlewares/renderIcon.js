@@ -1,7 +1,7 @@
 const renderIcon = icon => {
   switch (icon) {
     case "00":
-      return "images/crying.png";
+      return "images/lost.png";
     case "01d":
       return "/images/sun.png";
     case "01n":
