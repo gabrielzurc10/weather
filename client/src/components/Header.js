@@ -19,7 +19,7 @@ class Header extends Component {
           {this.props.feels}
         </div>
         <div className="icon-container">
-          {<img className="icon" src={renderIcon(this.props.icon)}/>}
+          {<img className="icon" src={renderIcon(this.props.icon)} alt=""/>}
         </div>
         <div className="desc">
           {this.props.desc}

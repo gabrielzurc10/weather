@@ -20,7 +20,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.max}
-              <img className="temp" src="/images/max.png"/>
+              <img className="temp" src="/images/max.png" alt="Highest"/>
               <div class="bottom">
                 <h3>Highest</h3>
                 <i></i>
@@ -29,7 +29,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.min}
-            <img className="temp" src="/images/min.png"/>
+            <img className="temp" src="/images/min.png" alt="Lowest"/>
             <div class="bottom">
               <h3>Lowest</h3>
               <i></i>
@@ -38,7 +38,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.humid}
-            <img className="humid"src="/images/humid.png"/>
+            <img className="humid"src="/images/humid.png" alt="Humidity"/>
             <div class="bottom">
               <h3>Humidity</h3>
               <i></i>
@@ -47,7 +47,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.rise}
-            <img className="sun" src="/images/sunrise.png"/>
+            <img className="sun" src="/images/sunrise.png" alt="Sunrise"/>
             <div class="bottom">
               <h3>Sunrise</h3>
               <i></i>
@@ -56,7 +56,7 @@ class Details extends Component {
 
           <div className="info tooltip">
             {this.props.set}
-            <img className="sun" src="/images/sunset.png"/>
+            <img className="sun" src="/images/sunset.png" alt="Sunset"/>
             <div class="bottom">
               <h3>Sunset</h3>
               <i></i>
