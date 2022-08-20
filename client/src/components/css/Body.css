@@ -22,7 +22,7 @@
   transition: 0.2s ease;
 }
 
-.crying {
+.notfound {
   background-image: -webkit-linear-gradient(top left, #fdfcfb 0%, #e2d1c3 100%);
   background-image: -o-linear-gradient(top left, #fdfcfb 0%, #e2d1c3 100%);
   background-image: linear-gradient(to bottom right, #fdfcfb 0%, #e2d1c3 100%);
