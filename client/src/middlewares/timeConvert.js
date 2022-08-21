@@ -5,6 +5,8 @@ const timeConvert = (type, unix, offset) => {
   var unixhours = date.getUTCHours();
   var mins = date.getUTCMinutes();
   var offsethours = timezone.getUTCHours();
+  var dayList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
   if (unixhours > 12) unixhours -= 12;
   if (offsethours > 12) offsethours -= 12;
@@ -15,10 +17,10 @@ const timeConvert = (type, unix, offset) => {
   if (hours > 12) hours -= 12;
 
   var formattedTime = hours+":"+mins;
-  formattedTime += type === "rise" ? " am" : " pm";
+  formattedTime += type === "rise" ? " AM" : " PM";
 
   if (type === 'dt') {
-    return date.getUTCMonth()+1 + '/' + date.getDate() + '/' + date.getFullYear();
+    return dayList[date.getDay()] + ', ' + monthList[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
   } else {
     return formattedTime;
   }
