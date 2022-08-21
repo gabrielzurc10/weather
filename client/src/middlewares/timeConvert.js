@@ -1,6 +1,4 @@
-const timeConvert = (sun, unix, offset) => {
-
-  var formattedTime = " ";
+const timeConvert = (type, unix, offset) => {
 
   var date = new Date(unix*1000);
   var timezone = new Date(offset*1000);
@@ -8,31 +6,22 @@ const timeConvert = (sun, unix, offset) => {
   var mins = date.getUTCMinutes();
   var offsethours = timezone.getUTCHours();
 
-  if (unixhours > 12) {
-      unixhours -= 12;
-  }
-  if(offsethours > 12) {
-      offsethours -= 12;
-  }
-  if(mins < 10 ) {
-    mins = "0"+mins;
-  }
+  if (unixhours > 12) unixhours -= 12;
+  if (offsethours > 12) offsethours -= 12;
+  if (mins < 10 ) mins = "0"+mins;
 
-  var hours = unixhours + offsethours;
-  if (hours > 12) {
-      hours -= 12;
-  }
+  var hours = type === 'dt' ? unixhours : (unixhours + offsethours);
 
-  formattedTime = hours+":"+mins;
+  if (hours > 12) hours -= 12;
 
-  if (sun === "rise") {
-    formattedTime += " am";
+  var formattedTime = hours+":"+mins;
+  formattedTime += type === "rise" ? " am" : " pm";
+
+  if (type === 'dt') {
+    return date.getUTCMonth()+1 + '/' + date.getDate() + '/' + date.getFullYear();
   } else {
-    formattedTime += " pm"
+    return formattedTime;
   }
-
-  return formattedTime;
-
 };
 
 export default timeConvert;

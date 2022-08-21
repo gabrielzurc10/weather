@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import dtReducer from './dtReducer';
 import cityReducer from './cityReducer';
 import tempReducer from './tempReducer';
 import feelsReducer from './feelsReducer';
@@ -12,6 +13,7 @@ import riseReducer from './riseReducer';
 import setReducer from './setReducer';
 
 export default combineReducers({
+  dt: dtReducer,
   city: cityReducer,
   temp: tempReducer,
   feels: feelsReducer,

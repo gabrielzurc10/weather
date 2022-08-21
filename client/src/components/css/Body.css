@@ -18,7 +18,7 @@
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.129);
   background-color: rgba(255, 255, 255);
   width: 25rem;
-  min-height: 28rem;
+  min-height: 30rem;
   transition: 0.2s ease;
 }
 
@@ -157,6 +157,6 @@
 @media only screen and (max-width: 600px) {
   .body-card {
     width: 18rem;
-    min-height: 20rem;
+    min-height: 20.5rem;
   }
 }

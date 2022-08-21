@@ -9,3 +9,4 @@ export const FETCH_MIN = 'fetch_min';
 export const FETCH_HUMID = 'fetch_humid';
 export const FETCH_RISE = 'fetch_rise';
 export const FETCH_SET = 'fetch_set';
+export const FETCH_DT = 'fetch_dt';

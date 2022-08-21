@@ -11,6 +11,7 @@ class Header extends Component {
     return(
       <div className="header-container">
         <div className="city">
+          {this.props.desc ? <p className="dt">{this.props.dt}</p> : <div className="loading-feels"/>}
           {this.props.desc ? this.props.city : <div className="loading-title"/>}
         </div>
         <div className="temperature">
@@ -30,8 +31,8 @@ class Header extends Component {
   }
 }
 
-function mapStateToProps({ city, temp, feels, icon, desc }) {
-  return { city, temp, feels, icon, desc };
+function mapStateToProps({ dt, city, temp, feels, icon, desc }) {
+  return { dt, city, temp, feels, icon, desc };
 }
 
 export default connect(mapStateToProps)(Header);
