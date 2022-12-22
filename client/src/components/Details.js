@@ -22,7 +22,7 @@ class Details extends Component {
           <div className="info tooltip">
             {this.props.max}
               {this.props.max ? <img className="temp" src="/images/max.png" alt="Highest"/> : <div className="loading-subicon"></div>}
-              <div class="bottom">
+              <div className="bottom">
                 <h3>Highest</h3>
                 <i></i>
               </div>
@@ -31,7 +31,7 @@ class Details extends Component {
           <div className="info tooltip">
             {this.props.min}
             {this.props.min ? <img className="temp" src="/images/min.png" alt="Lowest"/> : <div className="loading-subicon"></div>}
-            <div class="bottom">
+            <div className="bottom">
               <h3>Lowest</h3>
               <i></i>
             </div>
@@ -40,7 +40,7 @@ class Details extends Component {
           <div className="info tooltip">
             {this.props.humid}
             {this.props.humid ? <img className="humid"src="/images/humid.png" alt="Humidity"/> : <div className="loading-subicon"></div>}
-            <div class="bottom">
+            <div className="bottom">
               <h3>Humidity</h3>
               <i></i>
             </div>
@@ -49,7 +49,7 @@ class Details extends Component {
           <div className="info tooltip">
             {this.props.rise}
             {this.props.rise ? <img className="sun" src="/images/sunrise.png" alt="Sunrise"/> : <div className="loading-subicon"></div>}
-            <div class="bottom">
+            <div className="bottom">
               <h3>Sunrise</h3>
               <i></i>
             </div>  
@@ -58,7 +58,7 @@ class Details extends Component {
           <div className="info tooltip">
             {this.props.set}
             {this.props.set ? <img className="sun" src="/images/sunset.png" alt="Sunset"/> : <div className="loading-subicon"></div>}
-            <div class="bottom">
+            <div className="bottom">
               <h3>Sunset</h3>
               <i></i>
             </div>  

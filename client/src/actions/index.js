@@ -30,7 +30,7 @@ export const fetchDetails = () => async dispatch => {
     dispatch({ type: FETCH_MAX, payload: Math.trunc(res.data.main.temp_max)+"°" });
     dispatch({ type: FETCH_MIN, payload: Math.trunc(res.data.main.temp_min)+"°" });
     dispatch({ type: FETCH_HUMID, payload: res.data.main.humidity+"%" });
-    dispatch({ type: FETCH_RISE, payload: sunrise })
+    dispatch({ type: FETCH_RISE, payload: sunrise });
     dispatch({ type: FETCH_SET, payload: sunset });
     
   } catch (err) {
